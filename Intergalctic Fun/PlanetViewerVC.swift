@@ -14,6 +14,8 @@ class PlanetViewerVC: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    var planet: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
