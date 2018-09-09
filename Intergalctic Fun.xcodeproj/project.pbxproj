@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		0A1D563B2144BB2C00375A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D563A2144BB2C00375A36 /* AppDelegate.swift */; };
 		0A1D563D2144BB2C00375A36 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D563C2144BB2C00375A36 /* art.scnassets */; };
-		0A1D563F2144BB2C00375A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D563E2144BB2C00375A36 /* ViewController.swift */; };
+		0A1D563F2144BB2C00375A36 /* PlanetViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D563E2144BB2C00375A36 /* PlanetViewerVC.swift */; };
 		0A1D56422144BB2C00375A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D56402144BB2C00375A36 /* Main.storyboard */; };
 		0A1D56442144BB3900375A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D56432144BB3900375A36 /* Assets.xcassets */; };
 		0A1D56472144BB3900375A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D56452144BB3900375A36 /* LaunchScreen.storyboard */; };
+		0A1D564F2144BC1A00375A36 /* PlanetSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D564E2144BC1A00375A36 /* PlanetSelectorVC.swift */; };
+		0A1D56512144BD1400375A36 /* PlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D56502144BD1400375A36 /* PlanetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A1D56372144BB2C00375A36 /* Intergalctic Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intergalctic Fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1D563A2144BB2C00375A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A1D563C2144BB2C00375A36 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		0A1D563E2144BB2C00375A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A1D563E2144BB2C00375A36 /* PlanetViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewerVC.swift; sourceTree = "<group>"; };
 		0A1D56412144BB2C00375A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A1D56432144BB3900375A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A1D56462144BB3900375A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A1D56482144BB3900375A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A1D564E2144BC1A00375A36 /* PlanetSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSelectorVC.swift; sourceTree = "<group>"; };
+		0A1D56502144BD1400375A36 /* PlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				0A1D563A2144BB2C00375A36 /* AppDelegate.swift */,
-				0A1D563C2144BB2C00375A36 /* art.scnassets */,
-				0A1D563E2144BB2C00375A36 /* ViewController.swift */,
 				0A1D56402144BB2C00375A36 /* Main.storyboard */,
+				0A1D564E2144BC1A00375A36 /* PlanetSelectorVC.swift */,
+				0A1D563E2144BB2C00375A36 /* PlanetViewerVC.swift */,
+				0A1D56502144BD1400375A36 /* PlanetCell.swift */,
+				0A1D563C2144BB2C00375A36 /* art.scnassets */,
 				0A1D56432144BB3900375A36 /* Assets.xcassets */,
 				0A1D56452144BB3900375A36 /* LaunchScreen.storyboard */,
 				0A1D56482144BB3900375A36 /* Info.plist */,
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1D563F2144BB2C00375A36 /* ViewController.swift in Sources */,
+				0A1D564F2144BC1A00375A36 /* PlanetSelectorVC.swift in Sources */,
+				0A1D563F2144BB2C00375A36 /* PlanetViewerVC.swift in Sources */,
 				0A1D563B2144BB2C00375A36 /* AppDelegate.swift in Sources */,
+				0A1D56512144BD1400375A36 /* PlanetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
