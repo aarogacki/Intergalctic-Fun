@@ -63,7 +63,17 @@ class PlanetViewerVC: UIViewController, ARSCNViewDelegate {
         let orbitAction = SCNAction.rotateBy(x: 0, y: 2 * .pi, z: 0, duration: 6)
         let repeatOrbit = SCNAction.repeatForever(orbitAction)
         
+        let shipUpAction = SCNAction.move(to: SCNVector3(-0.35, 0.2, 0), duration: 2)
+        let shipDownAction = SCNAction.move(to: SCNVector3(-0.35, -0.2, 0), duration: 2)
+        
         let scene = SCNScene(named: "art.scnassets/ship.scn")
+        
+        shipUpAction.timingMode = .easeInEaseOut
+        shipDownAction.timingMode = .easeInEaseOut
+        
+        let upDown = SCNAction.sequence([shipUpAction, shipDownAction])
+        let repeatUpDown = SCNAction.repeatForever(upDown)
+        
         if let shipNode = scene?.rootNode.childNode(withName: "ship", recursively: true) {
             shipNode.scale = SCNVector3(0.2, 0.2, 0.2)
             shipNode.position = SCNVector3(-0.35, 0, 0)
@@ -72,6 +82,7 @@ class PlanetViewerVC: UIViewController, ARSCNViewDelegate {
             baseNode.addChildNode(rotateNode)
             rotateNode.addChildNode(shipNode)
             rotateNode.runAction(repeatOrbit)
+            shipNode.runAction(repeatUpDown)
         }
     }
     
